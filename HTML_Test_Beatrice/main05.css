@@ -1,0 +1,62 @@
+.design{
+    width: 300px;
+    padding: 20px 10px;
+    color: gray;
+    border-radius: 10px;
+    -webkit-appearance: button;
+    background-image: url(arrow.png), -webkit-linear-gradient(lightgray,white,lightgray);
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: 50px,cover;
+    box-shadow: 3px 4px 5px 6px rgb(93, 118, 151);
+}
+button{
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: 0 none;
+    cursor: pointer;
+    box-shadow: 5px 5px black;
+    text-shadow: 1px 1px black;
+}
+button:hover{
+    background-color: brown;
+}
+button:active{
+    box-shadow: inset 2px 2px 20px black;
+    text-shadow: 0px 0px black;
+    background-color: red;
+}
+#check1{
+    width: 50px;
+    height: 50px;
+    border:10px solid rgb(128, 0, 79);
+    border-radius: 50%;
+    background-color: red;
+}
+
+#check1:hover{
+    background-color: gray;
+}
+
+input[type=checkbox]{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+.check{
+    display: none;
+    width: 50px;
+    height: 50px;
+    font-size: 32px;
+    color: white;
+    text-align: center;
+    color:green;
+}
+
+input:checked + .check{
+    display: block;
+}
